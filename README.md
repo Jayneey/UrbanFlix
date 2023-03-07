@@ -44,3 +44,5 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 #Project was Championed by:
 <em>JANE AFFAMUEFUNA<em>
+#Contributor:
+<em>AWONUGA ISMAIL<em>
