@@ -1,70 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Urbanflix - Your Ultimate Movie Watchlist</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JK" crossorigin="anonymous">
-	<!-- Custom CSS -->
-	<link rel="stylesheet" href="style.css">
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urbanflix - Your Movie Watchlist App</title>
+  <style>
+    /* Style your landing page here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #1E90FF;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+    }
+    .header h1 {
+      margin: 0;
+    }
+    .header a {
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem;
+      border-radius: 5px;
+    }
+    .header a:hover {
+      background-color: white;
+      color: #1E90FF;
+    }
+    .hero {
+      background-image: url('https://www.example.com/hero-image.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero h2 {
+      font-size: 3rem;
+      color: white;
+      text-shadow: 1px 1px 2px black;
+      text-align: center;
+    }
+    .cta {
+      background-color: #1E90FF;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    .cta h3 {
+      margin-top: 0;
+    }
+    .cta p {
+      margin-bottom: 0;
+    }
+    .cta button {
+      background-color: white;
+      color: #1E90FF;
+      padding: 0.5rem;
+      border-radius: 5px;
+      border: none;
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+    .cta button:hover {
+      background-color: #1E90FF;
+      color: white;
+    }
+    .footer {
+      background-color: #1E90FF;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .error-message {
+      color: red;
+      margin-bottom: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-	<!-- Navigation Bar -->
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-		<div class="container">
-			<a class="navbar-brand" href="#">Urbanflix</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+  <header class="header">
+    <h1>Urbanflix</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="https://github.com/awonuga123">GitHub<>About></a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
 
-	<!-- Hero Section -->
-	<section id="hero">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-md-6">
-					<h1>Never miss a movie again</h1>
-					<p>With Urbanflix, you can create your ultimate movie watchlist and keep track of all the movies you want to watch. Sign up today and start watching!</p>
-					<a href="#" class="btn btn-lg btn-danger mt-4">Sign Up Now</a>
-				</div>
-				<div class="col-md-6">
-					<img src="https://source.unsplash.com/collection/9415385/600x400" alt="Movie Poster" class="img-fluid">
-				</div>
-			</div>
-		</div>
-	</section>
+  <section class="hero">
+    <h2>Find Your Next Favorite Movie</h2>
+  </section>
 
-	<!-- Features Section -->
-	<section id="features">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h2>Features</h2>
-					<p class="lead">Here are some of the features that make Urbanflix the ultimate movie watchlist app:</p>
-				</div>
-			</div>
-			<div class="row mt-5">
-				<div class="col-md-4">
-					
+  <section class="cta">
+    <h3>Join Urbanflix Today!</h3>
+    <p>Sign up to create your personalized watchlist.</p>
+    <form method="post" action="register.php">
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+        <div class="error-message" id="username-error"></div>
+      </div>
+      <div>
+        <label for="email">
 
